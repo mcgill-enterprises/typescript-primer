@@ -45,13 +45,13 @@ console.log(formatCurrency(1_450_000, "CAD")); // CAD 1,450,000.00
 // -----------------------------------------------------------------------------
 
 function buildEmail(firstName: string, lastName: string, domain?: string): string {
-  const host = domain ?? "mcgill.com"; // use the default if domain was not passed
+  const host = domain ?? "mcgill-enterprises.net"; // use the default if domain was not passed
   return `${firstName.toLowerCase()}.${lastName.toLowerCase()}@${host}`;
 }
 
 console.log("\n--- Optional Parameters ---");
-console.log(buildEmail("Sarah", "Chen"));                       // s.chen@mcgill.com
-console.log(buildEmail("James", "Okafor", "corp.mcgill.com")); // james.okafor@corp.mcgill.com
+console.log(buildEmail("Sarah", "Chen"));                       // s.chen@mcgill-enterprises.net
+console.log(buildEmail("James", "Okafor", "corp.mcgill-enterprises.net")); // james.okafor@corp.mcgill-enterprises.net
 
 
 // -----------------------------------------------------------------------------

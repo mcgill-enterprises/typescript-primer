@@ -73,7 +73,7 @@ export default function calculateBonus(salary: number, rating: number): number {
 // =============================================================================
 
 export const API_CONFIG = {
-  BASE_URL:    "https://api.mcgill.com/v2",
+  BASE_URL:    "https://api.mcgill-enterprises.net/v2",
   TIMEOUT_MS:  5_000,
   MAX_RETRIES: 3,
   VERSION:     "2.1.0",

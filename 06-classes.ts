@@ -234,7 +234,7 @@ class SlackNotification extends Notification {
 
 console.log("\n--- Abstract Classes ---");
 const notifications: Notification[] = [
-  new EmailNotification("s.chen@mcgill.com", "Q3 Report Ready", "Please review the attached.", "noreply@mcgill.com"),
+  new EmailNotification("s.chen@mcgill-enterprises.net", "Q3 Report Ready", "Please review the attached.", "noreply@mcgill-enterprises.net"),
   new SlackNotification("sarah.chen", "Reminder", "Stand-up in 10 minutes!", "engineering"),
 ];
 

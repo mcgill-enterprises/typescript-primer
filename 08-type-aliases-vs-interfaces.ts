@@ -95,7 +95,7 @@ interface AppConfig {
 
 // Now AppConfig requires ALL four fields:
 const config: AppConfig = {
-  apiUrl:     "https://api.mcgill.com",
+  apiUrl:     "https://api.mcgill-enterprises.net",
   version:    "2.1.0",
   timeout:    5_000,
   maxRetries: 3,

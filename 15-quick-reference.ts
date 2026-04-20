@@ -85,7 +85,7 @@ const double = (n: number): number => n * 2;
 
 // Optional parameter
 function buildEmail(first: string, last: string, domain?: string): string {
-  return `${first}.${last}@${domain ?? "mcgill.com"}`;
+  return `${first}.${last}@${domain ?? "mcgill-enterprises.net"}`;
 }
 
 // Default parameter
@@ -237,7 +237,7 @@ type EmployeeKey = keyof Employee; // "id" | "name" | "department" | "salary" | 
 type SalaryType = typeof salary; // number
 
 // as const — deeply freeze a literal object:
-const CONFIG = { url: "https://api.mcgill.com", retries: 3 } as const;
+const CONFIG = { url: "https://api.mcgill-enterprises.net", retries: 3 } as const;
 
 
 // ─────────────────────────────────────────────────────────────────────────────

@@ -40,7 +40,7 @@ type EmployeeUpdate = Partial<Employee>;
 const patch: EmployeeUpdate = { salary: 100_000 }; // only updating one field ✅
 
 function updateEmployee(id: number, updates: Partial<Employee>): Employee {
-  const existing: Employee = { id, firstName: "Sarah", lastName: "Chen", email: "s.chen@mcgill.com", department: "Engineering", salary: 95_000 };
+  const existing: Employee = { id, firstName: "Sarah", lastName: "Chen", email: "s.chen@mcgill-enterprises.net", department: "Engineering", salary: 95_000 };
   return { ...existing, ...updates };
 }
 
@@ -66,7 +66,7 @@ type CompleteEmployee = Required<DraftEmployee>;
 // Every field is now mandatory — no more ?
 
 const complete: CompleteEmployee = {
-  firstName: "Chloe", lastName: "Bouchard", email: "c.bouchard@mcgill.com",
+  firstName: "Chloe", lastName: "Bouchard", email: "c.bouchard@mcgill-enterprises.net",
   department: "Finance", salary: 72_000,
 };
 
@@ -83,7 +83,7 @@ console.log(complete);
 type FrozenEmployee = Readonly<Employee>;
 
 const config: Readonly<{ apiUrl: string; timeout: number }> = {
-  apiUrl: "https://api.mcgill.com",
+  apiUrl: "https://api.mcgill-enterprises.net",
   timeout: 5_000,
 };
 
@@ -104,7 +104,7 @@ type EmployeeContact   = Pick<Employee, "firstName" | "lastName" | "email">;
 type EmployeeFinancial = Pick<Employee, "id" | "salary" | "managerId">;
 
 const summary: EmployeeSummary = { id: 1001, firstName: "Sarah", lastName: "Chen" };
-const contact: EmployeeContact = { firstName: "Sarah", lastName: "Chen", email: "s.chen@mcgill.com" };
+const contact: EmployeeContact = { firstName: "Sarah", lastName: "Chen", email: "s.chen@mcgill-enterprises.net" };
 
 console.log("\n--- Pick<T, Keys> ---");
 console.log("Summary:", summary);
@@ -122,7 +122,7 @@ type CreateEmployeePayload = Omit<Employee, "id">;           // drop the DB-gene
 type PublicEmployee        = Omit<Employee, "salary" | "managerId">; // drop sensitive fields
 
 const newHirePayload: CreateEmployeePayload = {
-  firstName: "Lucas", lastName: "Ferreira", email: "l.ferreira@mcgill.com",
+  firstName: "Lucas", lastName: "Ferreira", email: "l.ferreira@mcgill-enterprises.net",
   department: "Engineering", salary: 91_000,
 };
 

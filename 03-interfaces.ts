@@ -50,7 +50,7 @@ const sarah: Employee = {
   id:           1001,
   firstName:    "Sarah",
   lastName:     "Chen",
-  email:        "s.chen@mcgill.com",
+  email:        "s.chen@mcgill-enterprises.net",
   department:   "Engineering",
   salary:       95_000,
   startDate:    "2019-03-15",
@@ -90,7 +90,7 @@ const james: Manager = {
   id:            2001,
   firstName:     "James",
   lastName:      "Okafor",
-  email:         "j.okafor@mcgill.com",
+  email:         "j.okafor@mcgill-enterprises.net",
   department:    "Engineering",
   salary:        120_000,
   startDate:     "2017-08-01",
@@ -202,7 +202,7 @@ interface AppConfig {             // same name — TypeScript merges these
 
 // AppConfig now requires BOTH apiUrl AND timeout:
 const config: AppConfig = {
-  apiUrl:  "https://api.mcgill.com",
+  apiUrl:  "https://api.mcgill-enterprises.net",
   timeout: 5_000,
 };
 

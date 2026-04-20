@@ -293,12 +293,12 @@ class HRClient {
     });
 
     const seed = [
-      { firstName: "Sarah",  lastName: "Chen",     email: "s.chen@mcgill.com",     department: Department.Engineering, level: EmployeeLevel.Senior, salary: 95_000,  startDate: "2019-03-15", address: makeAddress("845 Sherbrooke St W") },
-      { firstName: "James",  lastName: "Okafor",   email: "j.okafor@mcgill.com",   department: Department.Engineering, level: EmployeeLevel.Lead,   salary: 120_000, startDate: "2017-08-01", address: makeAddress("1000 De La Gauchetière W") },
-      { firstName: "Priya",  lastName: "Sharma",   email: "p.sharma@mcgill.com",   department: Department.Finance,     level: EmployeeLevel.Mid,    salary: 88_000,  startDate: "2020-11-01", address: makeAddress("500 René-Lévesque Blvd W") },
-      { firstName: "Amara",  lastName: "Diallo",   email: "a.diallo@mcgill.com",   department: Department.Operations,  level: EmployeeLevel.Mid,    salary: 79_000,  startDate: "2021-02-15", address: makeAddress("3600 Mountain St") },
-      { firstName: "Lucas",  lastName: "Ferreira", email: "l.ferreira@mcgill.com", department: Department.Engineering, level: EmployeeLevel.Mid,    salary: 91_000,  startDate: "2021-09-13", address: makeAddress("1250 Guy St") },
-      { firstName: "Mei",    lastName: "Tanaka",   email: "m.tanaka@mcgill.com",   department: Department.HR,          level: EmployeeLevel.Senior, salary: 85_000,  startDate: "2018-05-20", address: makeAddress("2075 University St") },
+      { firstName: "Sarah",  lastName: "Chen",     email: "s.chen@mcgill-enterprises.net",     department: Department.Engineering, level: EmployeeLevel.Senior, salary: 95_000,  startDate: "2019-03-15", address: makeAddress("845 Sherbrooke St W") },
+      { firstName: "James",  lastName: "Okafor",   email: "j.okafor@mcgill-enterprises.net",   department: Department.Engineering, level: EmployeeLevel.Lead,   salary: 120_000, startDate: "2017-08-01", address: makeAddress("1000 De La Gauchetière W") },
+      { firstName: "Priya",  lastName: "Sharma",   email: "p.sharma@mcgill-enterprises.net",   department: Department.Finance,     level: EmployeeLevel.Mid,    salary: 88_000,  startDate: "2020-11-01", address: makeAddress("500 René-Lévesque Blvd W") },
+      { firstName: "Amara",  lastName: "Diallo",   email: "a.diallo@mcgill-enterprises.net",   department: Department.Operations,  level: EmployeeLevel.Mid,    salary: 79_000,  startDate: "2021-02-15", address: makeAddress("3600 Mountain St") },
+      { firstName: "Lucas",  lastName: "Ferreira", email: "l.ferreira@mcgill-enterprises.net", department: Department.Engineering, level: EmployeeLevel.Mid,    salary: 91_000,  startDate: "2021-09-13", address: makeAddress("1250 Guy St") },
+      { firstName: "Mei",    lastName: "Tanaka",   email: "m.tanaka@mcgill-enterprises.net",   department: Department.HR,          level: EmployeeLevel.Senior, salary: 85_000,  startDate: "2018-05-20", address: makeAddress("2075 University St") },
     ];
 
     for (const emp of seed) {
@@ -338,7 +338,7 @@ async function main(): Promise<void> {
   const newEmpResp = await client.createEmployee({
     firstName:  "Chloe",
     lastName:   "Bouchard",
-    email:      "c.bouchard@mcgill.com",
+    email:      "c.bouchard@mcgill-enterprises.net",
     department: Department.Finance,
     level:      EmployeeLevel.Junior,
     salary:     72_000,

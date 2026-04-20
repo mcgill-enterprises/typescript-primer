@@ -133,7 +133,7 @@ function createApiClient(baseUrl: string, apiKey: string): ApiClient {
 }
 
 console.log("\n=== PATTERN 3: Factory Function ===");
-const apiClient = createApiClient("https://api.mcgill.com", "key-xxx");
+const apiClient = createApiClient("https://api.mcgill-enterprises.net", "key-xxx");
 await apiClient.get<Employee[]>("/employees");
 
 
@@ -163,7 +163,7 @@ async function sendNotification(options: SendNotificationOptions): Promise<void>
 
 console.log("\n=== PATTERN 4: Options Object ===");
 await sendNotification({
-  recipient: "s.chen@mcgill.com",
+  recipient: "s.chen@mcgill-enterprises.net",
   subject:   "Q3 Report Available",
   body:      "Your Q3 report is ready for review.",
   channel:   "email",
