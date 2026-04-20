@@ -30,7 +30,7 @@ function fetchEmployee(id: number): Promise<Employee> {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       if (id === 1001) {
-        resolve({ id: 1001, name: "Sarah Chen", department: "Engineering", salary: 95_000 });
+        resolve({ id: 1001, name: "Aino Mäkinen", department: "Engineering", salary: 95_000 });
       } else {
         reject(new Error(`Employee ${id} not found`));
       }
@@ -104,8 +104,8 @@ async function fetchDepartmentData(): Promise<void> {
 // --- Simulated API helpers ---
 function fetchEmployeeList(department: string): Promise<Employee[]> {
   return Promise.resolve([
-    { id: 1001, name: "Sarah Chen",    department, salary: 95_000 },
-    { id: 1005, name: "Lucas Ferreira",department, salary: 91_000 },
+    { id: 1001, name: "Aino Mäkinen",    department, salary: 95_000 },
+    { id: 1005, name: "Mikko Järvinen",department, salary: 91_000 },
   ]);
 }
 function fetchRevenue(quarter: string): Promise<number> {

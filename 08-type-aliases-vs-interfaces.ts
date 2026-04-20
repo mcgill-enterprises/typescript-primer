@@ -32,8 +32,8 @@ type EmployeeType = {
 };
 
 // Both work identically for creating objects:
-const emp1: EmployeeInterface = { id: 1001, name: "Sarah Chen",   department: "Engineering" };
-const emp2: EmployeeType      = { id: 1002, name: "Priya Sharma", department: "Finance"     };
+const emp1: EmployeeInterface = { id: 1001, name: "Aino Mäkinen",   department: "Engineering" };
+const emp2: EmployeeType      = { id: 1002, name: "Siiri Korhonen", department: "Finance"     };
 
 console.log("--- Both look the same ---");
 console.log(emp1.name, emp2.name);
@@ -68,7 +68,7 @@ type PartialEmployee  = Partial<EmployeeInterface>;
 
 const status: EmploymentStatus  = "active";
 const coords: Coordinate        = [45.5017, -73.5673]; // Montreal
-const mgr: Manager              = { id: 2001, name: "James Okafor", department: "Engineering", teamSize: 12, budget: 2_400_000 };
+const mgr: Manager              = { id: 2001, name: "Eero Virtanen", department: "Engineering", teamSize: 12, budget: 2_400_000 };
 
 console.log("\n--- type-only features ---");
 console.log("Status:", status);
@@ -150,8 +150,8 @@ class EmployeeRepository implements Repository<Employee> {
 }
 
 const repo = new EmployeeRepository();
-repo.save({ id: 1001, name: "Sarah Chen", department: "Engineering", salary: 95_000 });
-repo.save({ id: 1002, name: "Priya Sharma", department: "Finance", salary: 88_000 });
+repo.save({ id: 1001, name: "Aino Mäkinen", department: "Engineering", salary: 95_000 });
+repo.save({ id: 1002, name: "Siiri Korhonen", department: "Finance", salary: 88_000 });
 
 console.log("\n--- interface with implements ---");
 console.log("All employees:", repo.findAll().map((e) => e.name).join(", "));

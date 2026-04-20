@@ -71,7 +71,7 @@ interface Employee {
 // class Cache<T> { ... }
 
 // const employeeCache = new Cache<Employee>();
-// employeeCache.set("1001", { id: 1001, name: "Sarah Chen", department: "Engineering", salary: 95_000 }, 60);
+// employeeCache.set("1001", { id: 1001, name: "Aino Mäkinen", department: "Engineering", salary: 95_000 }, 60);
 
 console.log("(Exercise 2 — add your code above)\n");
 

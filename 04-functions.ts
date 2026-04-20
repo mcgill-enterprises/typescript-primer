@@ -88,8 +88,8 @@ function averageRatings(employeeName: string, ...ratings: number[]): string {
 }
 
 console.log("\n--- Rest Parameters ---");
-console.log(averageRatings("Sarah Chen", 8, 9, 7, 10, 9));
-console.log(averageRatings("James Okafor", 9, 10, 9, 10));
+console.log(averageRatings("Aino Mäkinen", 8, 9, 7, 10, 9));
+console.log(averageRatings("Eero Virtanen", 9, 10, 9, 10));
 
 
 // -----------------------------------------------------------------------------
@@ -107,7 +107,7 @@ const applyRaise = (emp: Employee, percent: number): Employee => ({
 // Return type inferred (TypeScript figures it out from the expression):
 const getFullName = (emp: Employee) => `${emp.name}`;
 
-const sarah: Employee = { id: 1001, name: "Sarah Chen", department: "Engineering", salary: 95_000, active: true };
+const sarah: Employee = { id: 1001, name: "Aino Mäkinen", department: "Engineering", salary: 95_000, active: true };
 const raisedSarah     = applyRaise(sarah, 10);
 
 console.log("\n--- Arrow Functions ---");
@@ -129,10 +129,10 @@ const applyTenPercent: TransformFn = (emp) => applyRaise(emp, 10);
 
 const employees: Employee[] = [
   sarah,
-  { id: 1002, name: "Priya Sharma",   department: "Finance",     salary: 88_000, active: true  },
-  { id: 1003, name: "Tom Bergmann",   department: "Engineering", salary: 102_000, active: false },
-  { id: 1004, name: "Amara Diallo",   department: "Operations",  salary: 79_000, active: true  },
-  { id: 1005, name: "Lucas Ferreira", department: "Engineering", salary: 91_000, active: true  },
+  { id: 1002, name: "Siiri Korhonen",   department: "Finance",     salary: 88_000, active: true  },
+  { id: 1003, name: "Paavo Salminen",   department: "Engineering", salary: 102_000, active: false },
+  { id: 1004, name: "Taavi Leinonen",   department: "Operations",  salary: 79_000, active: true  },
+  { id: 1005, name: "Mikko Järvinen", department: "Engineering", salary: 91_000, active: true  },
 ];
 
 const activeEngineers = employees.filter(isActive).filter(isEngineering);

@@ -165,7 +165,7 @@ console.log("Active projects:", byStatus.active.map((p) => p.name));
 // -----------------------------------------------------------------------------
 
 function getEmployeeProfile(id: number) {
-  return { id, name: "Sarah Chen", department: "Engineering", yearsOfService: 5 };
+  return { id, name: "Aino Mäkinen", department: "Engineering", yearsOfService: 5 };
 }
 
 type EmployeeProfile = ReturnType<typeof getEmployeeProfile>;

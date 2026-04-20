@@ -156,9 +156,9 @@ export default EmployeeService;
 // =============================================================================
 
 const service = new EmployeeService();
-service.add({ id: 1001, name: "Sarah Chen",    department: "Engineering", salary: 95_000 });
-service.add({ id: 1002, name: "Priya Sharma",  department: "Finance",     salary: 88_000 });
-service.add({ id: 1003, name: "Amara Diallo",  department: "Operations",  salary: 79_000 });
+service.add({ id: 1001, name: "Aino Mäkinen",    department: "Engineering", salary: 95_000 });
+service.add({ id: 1002, name: "Siiri Korhonen",  department: "Finance",     salary: 88_000 });
+service.add({ id: 1003, name: "Taavi Leinonen",  department: "Operations",  salary: 79_000 });
 
 console.log("--- Module Demo ---");
 console.log("All employees:", service.findAll().map((e) => e.name).join(", "));

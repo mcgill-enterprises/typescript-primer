@@ -73,7 +73,7 @@ class Employee {
   }
 }
 
-const sarah = new Employee("Sarah Chen", "Engineering", 95_000);
+const sarah = new Employee("Aino Mäkinen", "Engineering", 95_000);
 sarah.rating = 4; // uses the setter — validates the value
 
 console.log("--- Class with Access Modifiers ---");
@@ -166,10 +166,10 @@ class EmployeeRepository extends BaseRepository<Employee> {
 
 const repo = new EmployeeRepository();
 repo.add(sarah);
-repo.add(new Employee("James Okafor",   "Engineering", 120_000));
-repo.add(new Employee("Priya Sharma",   "Finance",      88_000));
-repo.add(new Employee("Amara Diallo",   "Operations",   79_000));
-repo.add(new Employee("Lucas Ferreira", "Engineering",  91_000));
+repo.add(new Employee("Eero Virtanen",   "Engineering", 120_000));
+repo.add(new Employee("Siiri Korhonen",   "Finance",      88_000));
+repo.add(new Employee("Taavi Leinonen",   "Operations",   79_000));
+repo.add(new Employee("Mikko Järvinen", "Engineering",  91_000));
 
 console.log("\n--- Inheritance ---");
 console.log(`Total: ${repo.count} employees`);

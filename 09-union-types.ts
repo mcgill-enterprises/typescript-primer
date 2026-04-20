@@ -104,7 +104,7 @@ function handleResult(result: ApiResult<Employee>): void {
 
 console.log("\n--- Discriminated Unions ---");
 handleResult({ status: "loading" });
-handleResult({ status: "success", data: { id: 1001, name: "Sarah Chen", department: "Engineering", salary: 95_000 }, requestId: "req-001" });
+handleResult({ status: "success", data: { id: 1001, name: "Aino Mäkinen", department: "Engineering", salary: 95_000 }, requestId: "req-001" });
 handleResult({ status: "error", message: "Not found", code: 404 });
 
 
@@ -141,7 +141,7 @@ function getAnnualCost(worker: Worker): number {
 }
 
 const workers: Worker[] = [
-  { type: "full-time", id: 1001, name: "Sarah Chen",  salary: 95_000, benefits: ["dental", "vision", "RRSP"] },
+  { type: "full-time", id: 1001, name: "Aino Mäkinen",  salary: 95_000, benefits: ["dental", "vision", "RRSP"] },
   { type: "contractor", id: 2001, name: "Dev Agency", hourlyRate: 150, agency: "TechStaff Inc." },
 ];
 

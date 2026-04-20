@@ -65,7 +65,7 @@ interface Project {
 // The same wrapper, but T = Employee here:
 const employeeResponse: ApiResponse<Employee> = {
   success:   true,
-  data:      { id: 1001, name: "Sarah Chen", department: "Engineering", salary: 95_000 },
+  data:      { id: 1001, name: "Aino Mäkinen", department: "Engineering", salary: 95_000 },
   requestId: "req-001",
   timestamp: new Date().toISOString(),
 };
@@ -102,13 +102,13 @@ function findById<T extends HasId>(items: T[], id: number | string): T | undefin
 // T can be anything, as long as it has an `id` field.
 
 const employees: Employee[] = [
-  { id: 1001, name: "Sarah Chen",   department: "Engineering", salary: 95_000 },
-  { id: 1002, name: "Priya Sharma", department: "Finance",     salary: 88_000 },
+  { id: 1001, name: "Aino Mäkinen",   department: "Engineering", salary: 95_000 },
+  { id: 1002, name: "Siiri Korhonen", department: "Finance",     salary: 88_000 },
 ];
 
 const found = findById(employees, 1002); // TypeScript knows this returns Employee | undefined
 console.log("\n--- Generic Constraint ---");
-console.log("Found:", found?.name); // Priya Sharma
+console.log("Found:", found?.name); // Siiri Korhonen
 
 
 // -----------------------------------------------------------------------------
@@ -154,9 +154,9 @@ class Repository<T extends HasId> {
 }
 
 const employeeRepo = new Repository<Employee>();
-employeeRepo.add({ id: 1001, name: "Sarah Chen",   department: "Engineering", salary: 95_000 });
-employeeRepo.add({ id: 1002, name: "Priya Sharma", department: "Finance",     salary: 88_000 });
-employeeRepo.add({ id: 1003, name: "Amara Diallo", department: "Operations",  salary: 79_000 });
+employeeRepo.add({ id: 1001, name: "Aino Mäkinen",   department: "Engineering", salary: 95_000 });
+employeeRepo.add({ id: 1002, name: "Siiri Korhonen", department: "Finance",     salary: 88_000 });
+employeeRepo.add({ id: 1003, name: "Taavi Leinonen", department: "Operations",  salary: 79_000 });
 
 console.log("\n--- Generic Class ---");
 console.log("Total employees:", employeeRepo.count);
@@ -175,11 +175,11 @@ const patch: EmployeeUpdate = { salary: 100_000 }; // only update salary ✅
 
 // Pick<T, Keys> — keep only specific fields
 type EmployeeSummary = Pick<Employee, "id" | "name">;
-const summary: EmployeeSummary = { id: 1001, name: "Sarah Chen" };
+const summary: EmployeeSummary = { id: 1001, name: "Aino Mäkinen" };
 
 // Omit<T, Keys> — drop specific fields
 type NewEmployee = Omit<Employee, "id">;
-const newHire: NewEmployee = { name: "Chloe Bouchard", department: "Finance", salary: 72_000 };
+const newHire: NewEmployee = { name: "Liisa Nieminen", department: "Finance", salary: 72_000 };
 
 // Record<Keys, Values> — typed key-value map
 type SalaryMap = Record<string, number>;

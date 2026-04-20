@@ -33,7 +33,7 @@ function fail<E>(error: E): Result<never, E> { return { ok: false, error }; }
 
 async function findEmployee(id: number): Promise<Result<Employee>> {
   if (id === 1001) {
-    return ok({ id: 1001, name: "Sarah Chen", department: "Engineering", salary: 95_000, status: "active" });
+    return ok({ id: 1001, name: "Aino Mäkinen", department: "Engineering", salary: 95_000, status: "active" });
   }
   return fail(new Error(`Employee ${id} not found`));
 }

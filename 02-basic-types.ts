@@ -49,7 +49,7 @@ console.log("Best quarter: $" + Math.max(...quarterlyRevenue).toLocaleString());
 // -----------------------------------------------------------------------------
 
 // [id, name, salary]
-let topEarner: [number, string, number] = [1001, "James Okafor", 120_000];
+let topEarner: [number, string, number] = [1001, "Eero Virtanen", 120_000];
 
 console.log("\n--- Tuples ---");
 console.log(`Top earner: #${topEarner[0]} — ${topEarner[1]}, $${topEarner[2].toLocaleString()}`);

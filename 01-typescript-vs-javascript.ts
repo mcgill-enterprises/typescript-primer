@@ -41,7 +41,7 @@ console.log(`Adjusted salary: $${salary.toFixed(2)}`);
 // Syntax:  variableName: Type
 // -----------------------------------------------------------------------------
 
-let employeeName: string  = "Sarah Chen";
+let employeeName: string  = "Aino Mäkinen";
 let isActive:     boolean = true;
 let startYear:    number  = 2019;
 

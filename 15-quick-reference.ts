@@ -13,7 +13,7 @@
 // TYPE ANNOTATIONS
 // ─────────────────────────────────────────────────────────────────────────────
 
-let name:    string  = "Sarah Chen";
+let name:    string  = "Aino Mäkinen";
 let salary:  number  = 95_000;
 let active:  boolean = true;
 let managed: null    = null;
